@@ -12,6 +12,7 @@ execute:
     warning: false
     error: false
 fig-align: center
+footer: "[bggj.is/samorka](https://bggj.is/samorka){target='_blank'}"
 ---
 
 ```{r setup, message=FALSE}
