@@ -117,4 +117,53 @@ Tölfræði, Raunvísindadeild Háskólka Íslands
 
 ## Niðurstöður
 
-![](images/flood_freq.png)
+![](images/flood_freq.png){fig-align=center}
+
+
+
+## Horft til framtíðar
+
+<br>
+
+::: {.columns}
+
+::: {.column width=50%}
+
+* Nútíminn tekur mið af framtíðinni
+* Yfirferð og skipulag á gögnum
+* Afurðir úr UKCP rannsókn nýtar okkur
+
+:::
+
+::: {.column width=50%}
+
+![](images/innvidir.png){fig-align=center}
+
+
+:::
+
+:::
+
+
+## 
+
+
+::: {.columns}
+
+::: {.column width=50%}
+
+![](images/hackathon1.png){fig-align=center}
+
+:::
+
+::: {.column width=50%}
+
+<br>
+<br>
+
+
+![](images/hackathon2.png){fig-align=center}
+
+:::
+
+:::

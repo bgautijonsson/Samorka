@@ -7,7 +7,16 @@ library(ggtext)
 library(glue)
 library(scales)
 library(arrow)
+library(rnaturalearth)
+library(rnaturalearthdata)
+library(patchwork)
 theme_set(theme_bggj())
+
+uk <- ne_countries(
+    scale = "medium", 
+    returnclass = "sf",
+    country =  c("United Kingdom", "Ireland")
+) 
 
 pgev <- function(y, loc, scale, shape) {
     out <- 1 + shape * (y - loc) / scale
@@ -54,7 +63,7 @@ p <- d |>
     scale_y_continuous(
         labels = label_number(suffix = " ára", accuracy = 1)
     ) +
-    facet_grid(rows = vars(y), scales = "free") +
+    facet_wrap(vars(y), scales = "free_y") +
     theme(
         panel.spacing = unit(1, "cm")
     ) +
@@ -69,97 +78,8 @@ p <- d |>
 ggsave(
     plot = p,
     filename = "images/flood_freq.png",
-    width = 8, height = 1 / 0.621 * 8, scale = 1
+    width = 8, height = 0.621 * 8, scale = 1.3
 )
-
-
-
-
-
-
-
-plot_dat <- d |> 
-    crossing(
-        year = c(2023, 2080)
-    ) |> 
-    mutate(
-        mut = mu * (1 + delta * (year - 1981)),
-        y = 50
-    ) |> 
-    mutate(
-        p = 1 - pgev(y, mut, sigma, xi),
-        p = coalesce(p, min(p, na.rm = T)),
-        t = 1 / p
-    ) |> 
-    mutate(
-        increase = p[year == max(year)] / p[year == min(year)],
-        .by = station
-    ) |> 
-    stations_to_sf()
-
-lims <- range(plot_dat$p, na.rm = T)
-
-p1 <- uk |> 
-    ggplot() +
-    geom_sf() +
-    geom_sf(
-        data = plot_dat |> filter(year == 2023) |> points_to_grid(),
-        alpha = 0.5,
-        linewidth = 0.001,
-        aes(fill = p, colour = p)
-    ) +
-    scale_fill_viridis_c(
-        limits = lims,
-        option = "A"
-    ) +
-    scale_colour_viridis_c(
-        limits = lims,
-        option = "A"
-    ) +
-    coord_sf(expand = FALSE) +
-    theme(
-        axis.line = element_blank(),
-        axis.text = element_blank(),
-        axis.ticks = element_blank(),
-        legend.position = "none"
-    ) 
-
-p2 <- uk |> 
-    ggplot() +
-    geom_sf() +
-    geom_sf(
-        data = plot_dat |> filter(year == 2080) |> points_to_grid(),
-        alpha = 0.5,
-        linewidth = 0.001,
-        aes(fill = p, colour = p)
-    ) +
-    scale_fill_viridis_c(
-        limits = lims,
-        option = "A"
-    ) +
-    scale_colour_viridis_c(
-        limits = lims,
-        option = "A"
-    ) +
-    coord_sf(expand = FALSE) +
-    theme(
-        axis.line = element_blank(),
-        axis.text = element_blank(),
-        axis.ticks = element_blank(),
-        legend.position = "top"
-    ) 
-
-p1 + p2 +
-    plot_layout(
-        guides = "collect"
-    )
-
-ggsave(
-    plot = p,
-    filename = "images/flood_freq_map.png",
-    width = 8, height = 0.621 * 8, scale = 1
-)
-
 
 
 
