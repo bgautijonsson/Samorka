@@ -1,0 +1,20 @@
+{
+  "hash": "abaece5b8d0c13170ac0edd05f32ace3",
+  "result": {
+    "markdown": "---\n#title: \"Tölfræðiaðferðir fyrir hámarksúrkomu á þéttu landfræðilegu neti\"\n#author: \"Brynjólfur Gauti Guðrúnar Jónsson\"\n#institute: \"Tölfræði, Raunvísindadeild Háskóla Íslands\"\n#date: \"2023/05/04\"\nformat: \n    revealjs:\n        theme: theme.scss\n        slide-number: true\nexecute:\n    echo: false\n    warning: false\n    error: false\nfig-align: center\n---\n\n::: {.cell}\n\n:::\n\n\n\n## {id=\"title-slide\"}\n\n<h1 class=title>\nTölfræðiaðferðir fyrir hámarksúrkomu á þéttu landfræðilegu neti\n</h1>\n\n<p class=subtitle>\n\n</p>\n\n<p class=author>\nBrynjólfur Gauti Guðrúnar Jónsson\n</p>\n\n<p class=institute>\nTölfræði, Raunvísindadeild Háskólka Íslands\n</p>\n\n## Lífeyrir\n\n<br>\n\n![](images/lifeyrir2.png){fig-align=center}\n\n## Aftakaúrkoma\n\n![](images/phd_nafn.png){fig-align=center width=50% .m-0 .p-0}\n\n::: {layout=\"[50,50]\"}\n\n![](images/flod1.jpg){fig-align=center width=450px .mt-0 .pt-0}\n\n![](images/flod2.jpg){fig-align=center width=450px .mt-0 .pt-0}\n\n:::\n\n## Öfgastærðagreining\n\n![](images/dreifing_maximum.gif){fig-align=center}\n\n## Öfgastærðagreining\n\n<br>\n\n::: {layout=\"[40,60]\"}\n\n![Fisher & Tippett](images/fishertippett.jpg){fig-align=center}\n\n![](images/theorem3.png){fig-align=center}\n\n:::\n\n## UK Climate Projections\n\n![](images/max_precip.png){fig-align=center}\n\n## Tölfræði á landfræðilegu neti\n\n\n::: {.columns}\n\n::: {.column width=\"60%\"}\n\n<br>\n\n<p style='color:#99000d;text-align:center'>Stöð 1 $(\\mu_1, \\sigma_1, \\xi_1, \\gamma_1)$</p>\n\n<p style='color:#ff7f00;text-align:center'>Stöð 2 $(\\mu_2, \\sigma_2, \\xi_2, \\gamma_2)$</p>\n\n<p style='color:#0570b0;text-align:center'>Stöð 3 $(\\mu_3, \\sigma_3, \\xi_3, \\gamma_3)$</p>\n\n![](images/qu.png){fig-align=center width=100%}\n\n:::\n\n::: {.column width=\"40%\"}\n\n![](images/stations.png)\n\n:::\n\n:::\n\n## Niðurstöður\n\n<br>\n\n![](images/param_results_mcmc.png){fig-align=center}\n\n\n## Niðurstöður\n\n![](images/flood_freq.png)",
+    "supporting": [
+      "index_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {
+      "include-after-body": [
+        "\n<script>\n  // htmlwidgets need to know to resize themselves when slides are shown/hidden.\n  // Fire the \"slideenter\" event (handled by htmlwidgets.js) when the current\n  // slide changes (different for each slide format).\n  (function () {\n    // dispatch for htmlwidgets\n    function fireSlideEnter() {\n      const event = window.document.createEvent(\"Event\");\n      event.initEvent(\"slideenter\", true, true);\n      window.document.dispatchEvent(event);\n    }\n\n    function fireSlideChanged(previousSlide, currentSlide) {\n      fireSlideEnter();\n\n      // dispatch for shiny\n      if (window.jQuery) {\n        if (previousSlide) {\n          window.jQuery(previousSlide).trigger(\"hidden\");\n        }\n        if (currentSlide) {\n          window.jQuery(currentSlide).trigger(\"shown\");\n        }\n      }\n    }\n\n    // hookup for slidy\n    if (window.w3c_slidy) {\n      window.w3c_slidy.add_observer(function (slide_num) {\n        // slide_num starts at position 1\n        fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);\n      });\n    }\n\n  })();\n</script>\n\n"
+      ]
+    },
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
