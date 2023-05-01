@@ -1,0 +1,119 @@
+---
+#title: "Tölfræðiaðferðir fyrir hámarksúrkomu á þéttu landfræðilegu neti"
+#author: "Brynjólfur Gauti Guðrúnar Jónsson"
+#institute: "Tölfræði, Raunvísindadeild Háskóla Íslands"
+#date: "2023/05/04"
+format: 
+    revealjs:
+        theme: theme.scss
+        slide-number: true
+execute:
+    echo: false
+    warning: false
+    error: false
+fig-align: center
+---
+
+```{r setup, message=FALSE}
+library(tidyverse)
+library(bggjphd)
+library(metill)
+library(sf)
+
+theme_set(theme_bggj())
+```
+
+
+## {id="title-slide"}
+
+<h1 class=title>
+Tölfræðiaðferðir fyrir hámarksúrkomu á þéttu landfræðilegu neti
+</h1>
+
+<p class=subtitle>
+
+</p>
+
+<p class=author>
+Brynjólfur Gauti Guðrúnar Jónsson
+</p>
+
+<p class=institute>
+Tölfræði, Raunvísindadeild Háskólka Íslands
+</p>
+
+## Lífeyrir
+
+<br>
+
+![](images/lifeyrir2.png){fig-align=center}
+
+## Aftakaúrkoma
+
+![](images/phd_nafn.png){fig-align=center width=50% .m-0 .p-0}
+
+::: {layout="[50,50]"}
+
+![](images/flod1.jpg){fig-align=center width=450px .mt-0 .pt-0}
+
+![](images/flod2.jpg){fig-align=center width=450px .mt-0 .pt-0}
+
+:::
+
+## Öfgastærðagreining
+
+![](images/dreifing_maximum.gif){fig-align=center}
+
+## Öfgastærðagreining
+
+<br>
+
+::: {layout="[40,60]"}
+
+![Fisher & Tippett](images/fishertippett.jpg){fig-align=center}
+
+![](images/theorem3.png){fig-align=center}
+
+:::
+
+## UK Climate Projections
+
+![](images/max_precip.png){fig-align=center}
+
+## Tölfræði á landfræðilegu neti
+
+
+::: {.columns}
+
+::: {.column width="60%"}
+
+<br>
+
+<p style='color:#99000d;text-align:center'>Stöð 1 $(\mu_1, \sigma_1, \xi_1, \gamma_1)$</p>
+
+<p style='color:#ff7f00;text-align:center'>Stöð 2 $(\mu_2, \sigma_2, \xi_2, \gamma_2)$</p>
+
+<p style='color:#0570b0;text-align:center'>Stöð 3 $(\mu_3, \sigma_3, \xi_3, \gamma_3)$</p>
+
+![](images/qu.png){fig-align=center width=100%}
+
+:::
+
+::: {.column width="40%"}
+
+![](images/stations.png)
+
+:::
+
+:::
+
+## Niðurstöður
+
+<br>
+
+![](images/param_results_mcmc.png){fig-align=center}
+
+
+## Niðurstöður
+
+![](images/flood_freq.png)
