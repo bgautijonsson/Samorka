@@ -1,8 +1,7 @@
 ---
 title: "Tölfræðiaðferðir fyrir hámarksúrkomu á þéttu landfræðilegu neti"
-#author: "Brynjólfur Gauti Guðrúnar Jónsson"
-#institute: "Tölfræði, Raunvísindadeild Háskóla Íslands"
-#date: "2023/05/04"
+author: "Brynjólfur Gauti Guðrúnar Jónsson"
+institute: "Tölfræði, Raunvísindadeild Háskóla Íslands"
 format: 
     revealjs:
         theme: theme.scss
@@ -25,23 +24,6 @@ theme_set(theme_bggj())
 ```
 
 
-## {id="title-slide"}
-
-<h1 class=title>
-Tölfræðiaðferðir fyrir hámarksúrkomu á þéttu landfræðilegu neti
-</h1>
-
-<p class=subtitle>
-
-</p>
-
-<p class=author>
-Brynjólfur Gauti Guðrúnar Jónsson
-</p>
-
-<p class=institute>
-Tölfræði, Raunvísindadeild Háskólka Íslands
-</p>
 
 ## Lífeyrir
 
