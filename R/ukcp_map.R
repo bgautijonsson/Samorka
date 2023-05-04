@@ -25,7 +25,7 @@ d <- precip |>
     )
 
 
-years <- c(1981, 2023, 2080)
+years <- c(2000, 2023, 2080)
 lims <- c(0, 110)
 
 plot_fun <- function(yr) {

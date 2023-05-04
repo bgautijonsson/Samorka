@@ -59,7 +59,7 @@ d <- read_parquet("data/station_results.parquet") |>
 
 p <- plot_param(
     mu, 
-    subtitle = "Meðaltal (μ)"
+    subtitle = "Staðsetning (μ)"
 ) +
     plot_param(
         sigma,
@@ -104,7 +104,7 @@ d <- read_parquet("data/station_results.parquet") |>
 
 p <- plot_param(
     mu, 
-    subtitle = "Meðaltal (μ)"
+    subtitle = "Staðsetning (μ)"
 ) +
     plot_param(
         sigma,

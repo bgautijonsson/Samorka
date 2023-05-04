@@ -114,6 +114,9 @@ Tölfræði, Raunvísindadeild Háskólka Íslands
 
 ![](images/param_results_mcmc.png){fig-align=center}
 
+## Niðurstöður
+
+![](images/flood_freq_change.gif){fig-align=center}
 
 ## Niðurstöður
 
