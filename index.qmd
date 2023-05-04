@@ -68,7 +68,11 @@ theme_set(theme_bggj())
 ![](images/max_precip.png){fig-align=center}
 
 $$
-180 \times 244 \times 24 \times 365 \times 60 \approx 23 \cdot 10^6
+180 \times 244 \times 24 \times 365 \times 60 \approx 23 \cdot 10^9
+$$
+
+$$
+180 \times 244 \times 60 \approx 2.6 \cdot 10^6
 $$
 
 ## Tölfræði á landfræðilegu neti
