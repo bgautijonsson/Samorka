@@ -11,6 +11,8 @@ execute:
     warning: false
     error: false
 fig-align: center
+slide-number: false
+logo: images/hi-audkenni_28-raunsvisd.png
 footer: "[bggj.is/samorka](https://bggj.is/samorka){target='_blank'}"
 ---
 
@@ -29,7 +31,7 @@ theme_set(theme_bggj())
 
 <br>
 
-![](images/lifeyrir2.png){fig-align=center}
+![](images/lifeyrir2.png){fig-align=center .r-stretch}
 
 ## Aftakaúrkoma
 

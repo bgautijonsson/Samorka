@@ -26,7 +26,7 @@ p <- plot_dat |>
     scale_x_tufte(
         labels = label_number(suffix = " mm/klst")
     ) +
-    scale_y_continuous(
+    scale_y_tufte(
         trans = "log10",
         expand = expansion(),
         labels = label_hlutf(accuracy = 0.001),
