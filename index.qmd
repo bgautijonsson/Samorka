@@ -6,6 +6,8 @@ format:
     revealjs:
         theme: theme.scss
         slide-number: true
+        view-distance: 5
+        auto-stretch: true
 execute:
     echo: false
     warning: false
@@ -64,6 +66,10 @@ theme_set(theme_bggj())
 ## UK Climate Projections
 
 ![](images/max_precip.png){fig-align=center}
+
+$$
+180 \times 244 \times 24 \times 365 \times 60 \approx 23 \cdot 10^6
+$$
 
 ## Tölfræði á landfræðilegu neti
 
