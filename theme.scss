@@ -67,4 +67,6 @@ $link-color-hover:              $darkblue;
     text-align: middle;
 }
 
-
+.quarto-title > h1.title {
+  opacity: 0 !important;
+}

@@ -1,5 +1,5 @@
 ---
-#title: "Tölfræðiaðferðir fyrir hámarksúrkomu á þéttu landfræðilegu neti"
+title: "Tölfræðiaðferðir fyrir hámarksúrkomu á þéttu landfræðilegu neti"
 #author: "Brynjólfur Gauti Guðrúnar Jónsson"
 #institute: "Tölfræði, Raunvísindadeild Háskóla Íslands"
 #date: "2023/05/04"
