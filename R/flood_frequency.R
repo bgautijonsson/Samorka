@@ -40,7 +40,7 @@ d <- read_parquet("data/station_results.parquet") |>
 
 p <- d |> 
     slice_max(n = 300, order_by = mu) |> 
-    slice_max(n = 10, order_by = delta) |> 
+    slice_max(n = 20, order_by = delta) |> 
     crossing(
         year = seq(1981, 2080)
     ) |> 

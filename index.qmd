@@ -118,7 +118,7 @@ $$
 
 
 
-## Horft til framtíðar
+## Upprifjun
 
 <br>
 
@@ -132,3 +132,28 @@ $$
 [Kóði fyrir glærur og myndir](https://github.com/bgautijonsson/samorka)
 
 [Kóði og gögn í doktorsverkefni mínu](https://github.com/bgautijonsson/bggjphd)
+
+
+## Horft til framtíðar
+ 
+
+::: {.columns}
+
+::: {.column width=50%}
+
+![](images/hackathon1.png){fig-align=center}
+
+:::
+
+::: {.column width=50%}
+
+<br>
+<br>
+
+![](images/hackathon2.png){fig-align=center}
+
+:::
+
+:::
+
+:::
