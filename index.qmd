@@ -122,45 +122,13 @@ $$
 
 <br>
 
-::: {.columns}
-
-::: {.column width=50%}
 
 * Nútíminn tekur mið af framtíðinni
-* Yfirferð og skipulag á gögnum
-* Afurðir úr UKCP rannsókn nýtast okkur
-
-:::
-
-::: {.column width=50%}
-
-![](images/innvidir.png){fig-align=center}
-
-
-:::
-
-:::
-
-
-## 
-
-
-::: {.columns}
-
-::: {.column width=50%}
-
-![](images/hackathon1.png){fig-align=center}
-
-:::
-
-::: {.column width=50%}
+* Notum sérstök líkön fyrir jaðargildi
+* Nýtum gögnin betur með stigskiptum landfræðilegum tölfræðilíkönum
 
 <br>
-<br>
 
+[Kóði fyrir glærur og myndir](https://github.com/bgautijonsson/samorka)
 
-![](images/hackathon2.png){fig-align=center}
-
-:::
-
-:::
+[Kóði og gögn í doktorsverkefni mínu](https://github.com/bgautijonsson/bggjphd)
